@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  node:
+    build:
+      context: ./docker/node
+    tty: true
+    volumes:
+      - ./src:/var/www/src
+      - node_modules:/var/www/src/node_modules
+    ports:
+      - "3000:3000"
+
+volumes:
+  node_modules:
