@@ -17,6 +17,9 @@ down:
 node:
 	docker-compose exec node ash
 
+redis: 
+	docker-compose exec redis ash
+
 ps:
 	docker-compose ps
 
