@@ -11,6 +11,7 @@ const io = new Server(server, {
   cors: {
     origin: process.env.CLIENT_SERVER,
   },
+  credentials: true,
   // adapter: createAdapter({
   //   pubClient,
   //   subClient: pubClient.duplicate(),
