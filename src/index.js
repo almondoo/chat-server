@@ -9,6 +9,7 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server, {
   cors: {
+    // 指定したクライアントのみ
     origin: process.env.CLIENT_SERVER,
     credentials: true,
   },
